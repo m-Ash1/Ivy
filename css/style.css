@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --secondary-color: #145afe;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Bootstrap start */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* XLarge */
+@media (min-width: 1440px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+/* Bootstrap end */
+
+/* Style start */
+
+/* upper header style */
+.upper-header {
+  background-color: var(--secondary-color);
+  padding: 14px 0;
+}
+.upper-header .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.upper-header .container img:first-child {
+  margin-right: 13px;
+}
+.upper-header .container img:last-child {
+  margin-left: 7px;
+}
+.upper-header .container span {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+/* end upper header style */
+
+/* nav style */
+nav {
+  padding: 20px 0;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 12%;
+}
+nav .logo img {
+  width: 100%;
+}
+nav .tabs a {
+  text-decoration: none;
+  color: black;
+  margin-left: 45px;
+  transform: 0.2s;
+}
+nav .tabs a:hover {
+  color: var(--secondary-color);
+}
+nav .tabs a i {
+  font-size: 12px;
+  margin-left: 4px;
+}
+nav .btns {
+  display: flex;
+  align-items: center;
+}
+
+nav .btns .button {
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+nav .btns .button:hover:not(:last-child) {
+  color: var(--secondary-color);
+}
+nav .btns .special-btn {
+  background-color: #0d0e10;
+  border-radius: 11px;
+  color: white;
+  padding: 20px 25px;
+  margin-left: 15px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+nav .btns .special-btn:hover {
+  background-color: var(--secondary-color);
+}
+nav .tabs a:first-child {
+  position: relative;
+  cursor: default;
+}
+nav .tabs a:first-child .wrapper {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -200px;
+  padding-top: 30px;
+}
+nav .tabs a:first-child:hover .wrapper {
+  display: block;
+}
+.hover-menu {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  box-shadow: 1px 1px 13px 1px rgb(0 0 0 / 10%);
+  gap: 45px;
+  border-radius: 8px;
+  padding: 25px 25px;
+  width: 1000px;
+  font-size: 15px;
+}
+.hover-menu .item {
+  display: flex;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hover-menu .item .icon {
+  margin-right: 10px;
+}
+.hover-menu .item .icon img {
+  width: 100%;
+}
+.hover-menu .item .desc {
+  line-height: 25px;
+}
+.hover-menu .item .heading {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.hover-menu .item:hover {
+  background-color: #fafafa;
+}
+.col-3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr;
+  position: relative;
+  gap: 20px;
+}
+.col-3::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #20202013;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+.col-3 .listitem:first-child {
+  font-weight: bold;
+}
+.col-3 .listitem {
+  display: flex;
+  align-items: center;
+}
+.col-3 .listitem:hover:not(:first-child) {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.col-3 .listitem:nth-child(5) {
+  opacity: 0.5;
+}
+.col-3 .listitem:last-child {
+  position: relative;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.col-3 .listitem:last-child:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #20202013;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+/* end nav style */
+
+/* Style end */
